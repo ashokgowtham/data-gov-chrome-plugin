@@ -1,0 +1,13 @@
+{
+  "name":"data-gov-chrome-plugin",
+  "version":"1.0",
+  "manifest_version" : 2,
+  "description":"<description>",
+  "permissions": ["tabs","http://*/*"],
+
+  "content_scripts":[{
+    "all_frames":true,
+    "js":[ "jquery.min.js", "main.js" ],
+    "matches":["http://data.gov.in/*"]
+    }]
+}
